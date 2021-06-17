@@ -8,6 +8,16 @@
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
          "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
          "context": [""]
+        },
+        {"tag": "age",
+         "patterns": ["How old", "How old are you", "what is your age", "age?"],
+         "responses": ["I was created in 2021.", "Less than a year old.", "Pretty young if you ask me."],
+         "context": [""]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should i call you", "whats your name"],
+         "responses": ["I'm Alex 2.0.", "My name is Alex 2.0", "Alex 2.0 :)."],
+         "context": [""]
         }
         ]
 }
