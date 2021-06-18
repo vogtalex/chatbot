@@ -81,6 +81,9 @@ def data_preparation(data):
 
 #Trains my model/AI with the data set given
 def model_training(training, output):
+
+    tensorflow.compat.v1.reset_default_graph()
+
     net = tflearn.input_data(shape=[None, len(training[0])])
     net = tflearn.fully_connected(net, 8)
     net = tflearn.fully_connected(net, 8)
@@ -89,11 +92,8 @@ def model_training(training, output):
 
     model = tflearn.DNN(net)
 
-    try:
-        model.load("model.tflearn")
-    except:
-        model.fit(training, output, n_epoch=1000, batch_size=4, show_metric=True)
-        model.save("model.tflearn")
+    model.fit(training, output, n_epoch=1000, batch_size=6, show_metric=True)
+    model.save("model.tflearn")
 
     return model 
 

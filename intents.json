@@ -1,17 +1,27 @@
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "responses": ["Hello. How are you?", "Good to see you again", "Hi there, can I be of assistance?"],
          "context": [""]
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "responses": ["See you later alligator!", "Have an excellent day", "Bye bye! You better come back."],
          "context": [""]
         },
         {"tag": "age",
          "patterns": ["How old", "How old are you", "what is your age", "age?"],
          "responses": ["I was created in 2021.", "Less than a year old.", "Pretty young if you ask me."],
+         "context": [""]
+        },
+        {"tag": "weather",
+         "patterns": ["What is the weather", "how is the weather", "is it raining", "is it sunny"],
+         "responses": ["I don't have a window.", "Look out there yourself", "How am I supposed to know"],
+         "context": [""]
+        },
+        {"tag": "info",
+         "patterns": ["what is your email", "who are you", "what is your resume", "How can I contact you"],
+         "responses": ["You can contact Alex Vogt by emailing him at vogtalex@oregonstate.edu"],
          "context": [""]
         },
         {"tag": "name",
